@@ -1,0 +1,638 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+header{
+	width: 100%;
+	height: 100px;
+	background: purple;
+}
+.logo-flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+ 
+}
+.logo{
+	width: 13%;
+	padding: 10px 10px;
+}
+.logo img {
+	width: 100%;
+	height: 77px;
+	border-radius: 45px;
+}
+
+.nav-bar ul li{
+	list-style-type: none;
+	display: inline-block;
+    
+}
+.nav-bar ul li a{
+	text-decoration: none;
+	padding: 0px 15px;
+	color: white;
+}
+.nav-link{
+	border-bottom: 2px solid #fff;
+}
+
+.nav-bar ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: red;
+	display: block;
+	margin: auto;
+	transition: 0.6s;
+}
+.nav-bar ul li:hover::after{
+	width: 80%;
+}
+@media only screen and (max-width: 480px){
+	.logo{
+		width: 21%;
+	}
+	header{
+		height: auto;
+	}
+	.logo img{
+		height: 50px;
+	}
+	.nav-bar ul li a{
+		font-size: 9px;
+	}
+
+}
+/*---lets-magic----*/
+.lets-magic{
+	width: 100%;
+	height: 540px;
+	background: gray;
+}
+.text-flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 140px;
+}
+
+.main-heading{
+	padding-bottom: 25px;
+}
+.main-heading h1 {
+	color: #0a320d;
+	font-size: 35px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.sub-heading {
+	line-height: 1.6em;
+	padding-bottom: 45px;
+} 
+.sub-heading p {
+	/*color: #d9cfcf;*/
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-family: 'Poppins', sans-serif;
+   
+}
+.bnt-flex {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.join-free{
+    margin-right: 30px;
+}
+.join-free a {
+	text-decoration: none;
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #0c0c38;
+	transition: 0.6s;
+}
+.join-free a:hover{
+	color: white;
+	background:  purple;
+}
+
+.Explore-more a {
+	text-decoration: none;
+	border: 2px solid #fff;
+	color: #0c0c38;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+
+}
+.right-img{
+	width: 95%;
+}
+.right-img img {
+	width: 100%;
+	height: 210px;
+	border: 5px solid;
+}
+@media only screen and (max-width: 768px){
+	 .lets-magic{
+	 	height: auto;
+	 }
+	 .text-flex{
+	 	padding-top: 50px;
+	 }
+	 .all-text{
+	 	text-align: center;
+	 }
+	 .bnt-flex{
+	 	justify-content: center;
+	 }
+	 .sub-heading p{
+	 	font-size: 12px;
+	 }
+}
+@media only screen and (max-width: 480px){
+	      .text-flex{
+	      	display: block;
+	      }
+	      .all-text{
+	      	margin-top: -25px;
+	      }
+	      .bnt-flex{
+	      	margin-top: -15px;
+	      }
+	      .right-img{
+	      	width: 70%;
+	      	margin: auto;
+	      	padding-top: 32px;
+	      }
+
+}
+/*----service-----*/
+.services{
+	background: #8797af;
+	height: 560px;
+	width: 100%;
+}
+.first-heading{
+	text-align: center;
+	padding-top: 30px;
+}
+.first-heading h1 {
+	line-height: 1.5em;
+	font-size: 25px;
+	font-family: 'Poppins', sans-serif;
+}
+.paragraph{
+	margin-top: 20px;
+	text-align: center;
+}
+.paragraph p {
+	color:  #313156;
+	font-weight: bold;
+}
+.icon-flex{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding-top: 55px;
+}
+.first-cont{
+	padding-top: 60px;
+	transition: 0.6s;
+	width: 20%;
+	height: 300px;
+	background: #a744a7;
+	border-radius: 7px;
+}
+.first-cont:hover{
+	background:  maroon;
+	border-radius: 8px;
+	color: white;
+
+}
+.first-icon i{
+      font-size: 35px;
+      padding: 5px 8px;
+      border: 2px solid black;
+      border-radius: 7px;
+}
+.express-delivery{
+	padding-top: 30px;
+	
+}
+.express-delivery h5{
+	font-size: 18px;
+} 
+.express-para {
+	padding: 35px 0px;
+	
+}
+.express-para p{
+	font-size: 15px;
+	font-family: 'Lobster', cursive;
+	
+ }
+ .arrow-icon .fa{
+           font-size: 22px;
+ }
+.second-cont{
+	padding-top: 60px;
+    background: purple;
+    width: 20%;
+    height: 300px;
+    text-align: center;
+    border-radius: 8px;
+}
+.first-icon1 i{
+	font-size: 35px;
+      padding: 5px 8px;
+      border: 2px solid black;
+      border-radius: 7px;
+}
+.express-delivery1{
+	padding-top: 30px;
+}
+.express-delivery1 h5{
+	font-size: 18px;
+}
+.express-para1 {
+	padding: 35px 0px;
+	
+}
+.express-para1 p{
+	font-size: 15px;
+	font-family: 'Lobster', cursive;
+	
+ }
+ .arrow-icon1 .fa{
+           font-size: 22px;
+ }
+.third-cont{
+	padding-top: 60px;
+	transition: 0.6s;
+	width: 20%;
+	height: 300px;
+	border-radius: 8px;
+	background: #a744a7;
+}
+.third-cont:hover{
+	background: maroon;
+	color: white;
+}
+.first-icon2 i{
+	font-size: 35px;
+      padding: 5px 8px;
+      border: 2px solid black;
+      border-radius: 7px;
+}
+.express-delivery2{
+	padding-top: 30px;
+}
+.express-delivery2 h5{
+	font-size: 18px;
+}
+.express-para2 {
+	padding: 35px 0px;
+	
+}
+.express-para2 p{
+	font-size: 15px;
+	font-family: 'Lobster', cursive;
+	
+ }
+ .arrow-icon2 .fa{
+    font-size: 22px;
+ }
+@media only screen and (max-width: 768px){
+	.services{
+		height: auto;
+	}
+	.first-cont{
+		 width: 30%;
+		 height: auto;
+	}
+	.second-cont{
+		 width: 30%;
+		 height: auto;
+	}
+	.third-cont{
+		 width: 30%;
+		 height: auto;
+	}
+	.first-icon{
+		margin-top: -45px;
+	}
+	.first-icon1{
+		margin-top: -45px;
+	}
+	.first-icon2{
+		margin-top: -45px;
+	}
+	.express-delivery{
+		padding-top: 23px;
+	}
+	.express-delivery1{
+		padding-top: 23px;
+	}
+	.express-delivery2{
+		padding-top: 23px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.first-heading h1{
+	      	font-size: 23px;
+	      }
+	      .paragraph p{
+	      	font-size: 12px;
+	      }
+	      .icon-flex{
+	      	display: block;
+	      	padding-top: 35px;
+	      }
+	      .first-cont{
+	      	width: 70%;
+	      	margin: auto;
+	      	margin-bottom: 20px;
+	      }
+	      .second-cont{
+	      	width: 70%;
+	      	margin: auto;
+	      	margin-bottom: 20px;
+	      }
+	      .third-cont{
+	      	width: 70%;
+	      	margin: auto;
+	      }
+}
+
+/*----customers----*/
+.customer{
+	width: 100%;
+	height: 560px;
+	background: linear-gradient(#abd1d1,#5e5ea7);
+}
+.female-cont{
+	display: flex;
+	justify-content: /*space-around*/ center;
+	align-items: center;
+}
+.female{
+	padding-top: 130px;
+}
+.female-leftside{
+       width: 60%;
+}
+.female-leftside img{
+	width: 100%;
+	height: 290px;
+	border: 8px solid red;
+	
+}
+.right-heading {
+	padding-top: 100px;
+}
+.our-customers{
+	padding-bottom: 30px;
+}
+.our-customers h1 {
+	font-size: 30px;
+    line-height: 1.5em;
+}
+.dummy-content{
+	padding-bottom: 30px;
+}
+.dummy-content p {
+	font-size: 20px;
+	font-family: 'Dancing Script', cursive;
+}
+.watch-now button {
+	background: indianred;
+	padding: 16px 40px;
+	border-radius: 5px;
+	border: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.6s;
+}
+.watch-now button:hover{
+       background: blueviolet;
+       
+}
+@media only screen and (max-width: 768px){
+	     .customer{
+	     	height: auto;
+	     }
+	     .female{
+	     	padding-top: 26px;
+	     }
+	     .right-heading {
+              padding-top: 50px;
+	     }
+	     .female-leftside{
+	     	margin: auto;
+	     }
+	     .right-heading{
+	     	text-align: center;
+	     }
+	     .watch-now{
+	     	margin-top: -10px;
+	     }
+	     .our-customers h1{
+	     	font-size: 25px;
+	     }
+}
+@media only screen and (max-width: 480px){
+	.female-cont{
+		display: block;
+	}
+	.our-customers h1{
+		margin-top: -13px;
+	}
+}
+/*-----life-better----*/
+.life-better{
+	width: 100%;
+	height: 500px;
+	background: antiquewhite;
+}
+.imgcont-flex{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 80px;
+}
+.yogo-make h1{
+       font-size: 30px;
+       font-family: 'Poppins', sans-serif;
+       letter-spacing: 1px;
+   }
+   .para-text{
+   	padding: 35px 0px;
+   }
+.para-text p {
+	color: blueviolet;
+	font-family: monospace, sans-serif;
+}
+
+.square-btn button{
+	color: white;
+	background: blueviolet;
+	border: 3px solid darkred;
+	font-size: 17px;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+.ladies-img {
+	width: 70%;
+}
+.ladies-img img {
+	width: 100%;
+    height: 315px;
+    border: 50px solid gray;
+}
+@media only screen and (max-width: 768px){
+	    .life-better{
+	    	height: auto;
+	    }
+	.text-style{
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 480px){
+	.imgcont-flex{
+		display: block;
+	}
+	.yogo-make h1{
+		margin-top: -42px;
+	}
+	.para-text{
+		padding: 25px 0px;
+	}
+	.ladies-img{
+		margin: auto;
+	}
+	.ladies-img img {
+		height: auto;
+	}
+	.square-btn{
+		padding-bottom: 20px;
+	}
+}
+/*-------four-box----*/
+.last-sect {
+	width: 100%;
+	height: 660px;
+	background: #86d1d1;
+}
+.four-flex{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+
+} 
+.first-box {
+	text-align: center;
+}
+.profile{
+	width: 13%;
+	margin: auto;
+	padding-top: 35px;
+}
+.profile img {
+	width: 100%;
+	height: 93px;
+	border-radius: 50%;
+	border: 5px solid darkblue;
+}
+.name {
+	padding: 20px 10px;
+}
+.name h3 {
+	font-size: 20px;
+}
+.qualifiaction {
+	padding-bottom: 27px;
+}
+.qualifiaction h5{
+	color: #221f1f;
+	font-size: 18px;
+
+}
+.details p{
+    color: #7c2727;
+    line-height: 1.5em;
+    font-size: 15px;
+}
+.second-box{
+	text-align: center;
+}
+.third-box{
+	text-align: center;
+}
+.four-box{
+	text-align: center;
+}
+@media only screen and (max-width: 480px){
+       .profile{
+       	width: 20%;
+       }
+       .profile img{
+       	height: auto;
+       }
+       .details p{
+       	font-size: 13px;
+       }
+       .last-sect {
+       	height: auto;
+       }
+}
+/*---footer----*/
+.footer{
+	background: palevioletred;
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	padding-top: 90px;
+}
+.container{
+	margin-bottom: 40px;
+}
+.container h1 {
+	font-size: 30px;
+	color: white;
+}
+.email h3{
+	padding-bottom: 15px;
+	color: #403333;
+}
+.hr-line hr {
+	width: 55%;
+	border: 2px solid darkred;
+	margin: auto;
+}
+.Subscribe{
+	padding-top: 20px;
+}
+.Subscribe button{
+	border: 3px solid white;
+	padding: 10px 28px;
+	background: navy;
+	color: white;
+	font-size: 15px;
+}
+.copyright {
+	padding-top: 60px;
+}
+.copyright p {
+	font-size: 15px;
+	color: #fff;
+}
+@media only screen and (max-width: 480px){
+	.footer{
+		height: auto;
+	}
+}
